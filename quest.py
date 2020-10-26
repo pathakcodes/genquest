@@ -7,19 +7,7 @@ from textblob import Word
 import sys
 
 
-def parse(string):
-    """
-    Parse a paragraph. Devide it into sentences and try to generate quesstions from each sentences.
-    """
-    
-    try:
-        txt = TextBlob(string)
-        # Each sentence is taken from the string input and passed to genQuestion() to generate questions.
-        for sentence in txt.sentences:
-            genQuestion(sentence)
 
-    except Exception as e:
-        raise e
 
 
 
